@@ -1,3 +1,4 @@
+/* Write CSS Here */
 * {
 margin: 0;
 padding: 0;
@@ -16,24 +17,24 @@ border: 1px;
 width: 50%;
 max-width: 1000px;
 min-height: 90px;
-background-color:SmokeWhite;
+background-color:rgb(255, 255, 255);
 margin: 0px;
 display: grid;
 grid-template-columns: 2fr 4fr;
-border-color: Teal;
+border-color: (rgb(255, 241, 116));
 }
 .left {
 position: initial;
-background-image: linear-gradient(LightCyan,Teal);
-border-color: Teal;
+background-image: linear-gradient(45deg,rgb(247, 109, 109),rgb(255, 241,
+116));
 padding: 20px;
 }
 .right {
 position: initial;
-background-color: smokewhite;
+background-color: rgb(255, 255, 255);
 padding: 20px;
 border-style: solid;
-border-color: white;
+border-color: rgb(255, 241, 116);
 }
 .image, .Contact, .Skills, .Language, .Hobbies, .title,
 .Summary, .Experience, .Education, .project {

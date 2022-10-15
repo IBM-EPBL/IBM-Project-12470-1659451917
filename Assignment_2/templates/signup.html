@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+    {% block head %}
+    
+    {% endblock %}
+
+    {% block body %}
+   
+    <form action='signup.html' method="POST">
+        <h1 style="color:rgb(250, 230, 53);">Sign Up Page</h1><br/><br/>
+        <label>Name:</label><br/>
+        <input type="text" name ="name"><br/><br/><br/>
+    
+        <label>Email:</label><br/>
+        <input type="email" name ="email"><br/><br/><br/>
+    
+        <label>Password:</label><br/>
+        <input type="password" name ="password"><br/><br/><br/>
+    
+        <label>Mobile Number:</label><br/>
+        <input type="number" name ="number"><br/><br/><br/>
+    
+    
+        <label>Gender:</label><br/>
+        <input type="radio" id = "female" name ="female" value="female">
+        <label for = "female">Female</label>
+        <input type="radio" id = "male" name ="male" value="male">
+        <label for = "male">Male</label><br/><br/><br/><br/>
+    
+    
+        
+    
+        <input type="submit" class="btn btn-primary">
+    
+    {% endblock %}
+

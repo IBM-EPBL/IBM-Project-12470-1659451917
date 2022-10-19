@@ -1,0 +1,30 @@
+img{
+    height: 20%;
+    width: 30%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding: 10px 20px;
+    background: url(https://static.vecteezy.com/system/resources/previews/000/264/866/original/vector-moon-planet-on-space-background.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width:1000px;
+    background-size: contain;
+    position: relative;
+    
+}
+.container img{
+    position: absolute;
+    left: 30%;
+    top: 38%;
+    animation: levitation 2s infinite alternate linear;
+
+}
+@keyframes levitation{
+    0%{top:8%;}
+
+    100%{top: 18%;}
+}

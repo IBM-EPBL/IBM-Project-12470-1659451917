@@ -1,0 +1,62 @@
+{% extends 'dnavbar.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Application Form</title>
+    </head>
+     <body>
+    <br>
+        <img src="/static/images/img1.png" alt="image is not available" width="400px" height="600px">
+        <link rel="stylesheet" href="/static/css/job apply.css">
+        <form action="/completeSetup" method="post"><table><br><br><br><br>
+            <h1><center><b>PROFILE SETUP</b></center></h1><br>
+            
+            <tr><td><label>First Name:</label></td>
+            <td><input type="text" name="fname" placeholder="First Name" required></td></tr>
+            <tr><td><label>Last Name:</label></td>
+            <td><input type="text" name="lname" placeholder="Last Name" required></td></tr>
+        
+        
+            
+                <tr><td><label>Current Address</label></td>
+                <td><textarea rows="10" cols="30" name="currentaddress" placeholder="Type Your Address...." required></textarea></td></tr>
+                <tr><td><label>Permanant Address</label></td>
+                <td><textarea rows="10" cols="30" name="permanentaddress" placeholder="Type Your Address...."required></textarea> </td>
+                </tr>   
+            
+            <tr><td>
+            <label>Number:</label></td>
+            <td><input type="number" name="mnumber" size="30" maxlength="4" placeholder="Number" required>
+            </td></tr>
+            <tr><td>
+            <label> Alternate Number:</label></td>
+            <td><input type="number" name="alternatenumber" size="30" maxlength="4" placeholder="Alternate Number"required>
+            </td></tr>
+            <tr><td>
+            <label>E-mail:</label></td>
+            <td><input type="E-mail" name="email" placeholder="email address"required>
+            </td></tr>
+            <tr><td>
+            <label>Alternate E-mail:</label></td>
+            <td><input type="E-mail" name="alternateemail" placeholder="email address" required>
+            </td></tr>
+           
+            <tr><td>
+            <label>Upload CV:</label></td>
+            <td><input type="file" name="cv" required>
+            </td></tr>
+            <tr><td>
+            <label> Photo:</label></td>
+            <td><input type="file" name="photo" required></td></tr>
+            <tr><td>
+            <input type="submit" name="submit"></td></tr>
+            </table>
+            
+        
+        </form>
+
+    </body>
+</html>
+{% endblock %}

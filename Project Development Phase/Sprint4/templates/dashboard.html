@@ -1,0 +1,61 @@
+{% extends 'dnavbar.html' %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***Script for chatbot***-->
+    <script>
+        <script type="text/javascript">
+            (function(d, m){
+                var kommunicateSettings = 
+                    {"appId":"34fd60fcb27019f1da0f50c35626a9694","popupWidget":true,"automaticChatOpenOnNavigation":true};
+                var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+                s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+                var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+                window.kommunicate = m; m._globals = kommunicateSettings;
+            })(document, window.kommunicate || {});
+        
+        </script>
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <video autoplay muted loop id="bg-video">
+            <source src="/static/images/video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay header-text">
+            <div class="caption">
+                
+                <h2>Find the job that fits you the <em>best</em></h2>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        Copyright © 2020 Company Name
+                        - Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+{% endblock %}

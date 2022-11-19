@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: jobrecommender-service
+spec:
+  type: ClusterIP
+  ports:
+    - port: 5000
+  selector:
+    app: jobrecommender-app

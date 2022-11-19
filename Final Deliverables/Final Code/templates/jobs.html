@@ -1,0 +1,91 @@
+{% extends 'dnavbar.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/static/imgages/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="codepixer">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Job Listing</title>
+<link rel="stylesheet" href="/static/css/Jobpost.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="/static/css/linearicons.css">
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/bootstrap.css">
+        <link rel="stylesheet" href="/static/css/magnific-popup.css">
+        <link rel="stylesheet" href="/static/css/nice-select.css">					
+        <link rel="stylesheet" href="/static/css/animate.min.css">
+        <link rel="stylesheet" href="/static/css/owl.carousel.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+<br><br><br><br><br>
+         
+							
+							
+			<!-- End banner Area -->	
+
+
+        
+        <!-- Start post Area -->
+        {% for items in data %}
+        <section class="post-area section-gap">
+            <div class="container">
+                <div class="row justify-content-center d-flex">
+                    <div class="col-lg-8 post-list">
+                        <div class="single-post d-flex flex-row">
+                            <div class="thumb">
+                                <img src="/static/imgages/post.png" alt="">
+                                
+                            </div>
+                            <div class="details">
+                                <div class="title d-flex flex-row justify-content-between">
+                                    <div class="titles">
+                                        <h4>{{items.jtitle}}</h4>
+                                        <h6>{{items.Category}}</h6>					
+                                    </div>
+                                    
+                                </div>
+                                <p>
+                                   {{items.jdes}}
+                                </p>
+                                <h5>Category:{{items.Category}}</h5>
+                                <p class="address"><span class="lnr lnr-map"></span>Skills: {{items.skills}}</p>
+                                <p class="address"><span class="lnr lnr-database"></span>Salary: {{items.salary}}</p>
+                                <ul class="btn">
+                                        
+                                    <li><a href="{{url_for('sent')}}">Apply</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+                        
+                  {% endfor %}                  <!-- End post Area -->
+            
+
+      
+    </body>
+</html>
+
+{% endblock %}
+

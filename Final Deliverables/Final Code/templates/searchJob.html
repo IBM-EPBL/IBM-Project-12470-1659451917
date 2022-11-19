@@ -1,0 +1,80 @@
+
+{% extends 'dnavbar.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/static/imgages/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="codepixer">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Job Listing</title>
+    <link rel="stylesheet" href="/static/css/Jobpost.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+        <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="/static/css/linearicons.css">
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/bootstrap.css">
+        <link rel="stylesheet" href="/static/css/magnific-popup.css">
+        <link rel="stylesheet" href="/static/css/nice-select.css">					
+        <link rel="stylesheet" href="/static/css/animate.min.css">
+        <link rel="stylesheet" href="/static/css/owl.carousel.css">
+        <link rel="stylesheet" href="/static/css/main.css">
+    </head>
+    <body>
+        <br><br><br><br><br><br>
+<center><h1 style="color: white;">Welcome!!!</h1><br>
+<h3 style="color: white;">Find Jobs Based On Your Skillsets</h3></center>
+        <br><br><br><br><br>
+        <!-- start banner Area -->
+        <div><form class="serach-form-area" action="/jobs" method ="post" >
+          <div class="row justify-content-center form-wrap">
+              <div class="col-lg-4 form-cols">
+                
+                <select name="Category" id="keyword" class="form-control" >
+                    <option value = "Analytics &Data Science">Analytics &Data Science</option>
+                <option value = "Mobile Applications">Mobile Applications</option>
+                <option value="DevOps">DevOps</option>
+                
+                <option value="UI & Design">UI & Design</option>
+                
+                    
+                  </select>
+                  
+              </div>
+              <div class="col-lg-3 form-cols">
+                  <div class="default-select" id="default-selects"">
+                      <input type="text" class="form-control" name="location" placeholder="location">
+                  </div>
+              </div>
+              
+              <div class="col-lg-2 form-cols">
+                <input type="submit" class="btn btn-secondary">
+                  
+              </div>								
+          </div>
+      </form>	</div>
+                          
+                          
+							
+							
+			<!-- End banner Area -->	
+
+
+            </body>
+</html>
+
+{% endblock %}
+

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jobrecommender
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: jobrecommender
+  template:
+    metadata:
+      labels:
+        app: jobrecommender
+
+    spec:
+      containers:
+        - name: jobrecommender
+          image: env:jobappv1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP

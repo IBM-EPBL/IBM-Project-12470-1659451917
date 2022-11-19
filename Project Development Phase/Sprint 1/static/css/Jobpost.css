@@ -1,0 +1,36 @@
+
+.one{
+    
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+body{
+    background-image: linear-gradient(to right top, #605959, #8c5c57, #b15e4d, #d16439, #e96f12);
+    background-repeat: no-repeat;
+    height:100%;
+    
+}
+form{
+    color: white;
+}
+select,option{
+    width:369px;
+}
+table,td{
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type=text]{
+    background-color: azure;
+}
+select,option{
+    background-color: azure;
+}
+textarea{
+    background-color: azure;
+}
+input[type=submit]{
+    width: 150px;
+}

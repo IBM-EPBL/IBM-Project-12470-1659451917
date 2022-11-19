@@ -1,0 +1,27 @@
+body{
+            
+     background-image: linear-gradient(to right top, #605959, #8c5c57, #b15e4d, #d16439, #e96f12);
+     background-color: azure;
+     display: flex;
+     justify-content: center;
+     font-family: Arial, Helvetica, sans-serif;
+     background-position: center;
+     background-size: cover;
+     color: white;
+ }
+ input[type=text]{
+    background-color: azure;
+}
+select,option{
+    background-color: azure;
+}
+textarea{
+    background-color: azure;
+}
+button{
+    background-color: azure;
+}
+input[type=submit]{
+    margin-right: 50px;
+    width: 150px;
+}
